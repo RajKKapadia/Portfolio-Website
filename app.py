@@ -113,10 +113,11 @@ with st.container():
     st.header('Get in touch with me...')
 
     contact_form = '''
-    <form action="https://formsubmit.co/raajforyou@gmail.com" method="POST">
+    <form action="https://formsubmit.co/50aae58420241ff21a01db9f23cc81b6" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="service" placeholder="What kind of service you are looking for..." required>
         <textarea name="message" placeholder="Your message here" required></textarea>
         <button type="submit">Send</button>
     </form>
