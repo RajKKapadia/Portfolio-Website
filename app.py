@@ -1,8 +1,11 @@
 import json
+import os
 
 import streamlit as st
 from streamlit_lottie import st_lottie
 from PIL import Image
+from dotenv import load_dotenv
+load_dotenv()
 
 import utils
 
@@ -112,8 +115,8 @@ with st.container():
     st.write('---')
     st.header('Get in touch with me...')
 
-    contact_form = '''
-    <form action="https://formsubmit.co/50aae58420241ff21a01db9f23cc81b6" method="POST">
+    contact_form = f'''
+    <form action="https://formsubmit.co/{os.getenv("form_submit")}" method="POST">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
