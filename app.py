@@ -21,7 +21,7 @@ img_heroku = Image.open('images/heroku.webp')
 img_translate = Image.open('images/translate.webp')
 img_photo = Image.open('images/my_photo-modified.png')
 
-st.set_page_config(page_title='Raj Kapadia', page_icon=':tada:', layout='wide')
+st.set_page_config(page_title='Raj Kapadia', page_icon='😎', layout='wide')
 st.markdown(utils.local_css('style/style.css'), unsafe_allow_html=True)
 
 with st.container():
