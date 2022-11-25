@@ -38,11 +38,19 @@ with st.container():
             file_name='RajKKapadia.pdf',
             mime="application/octet-stream",
         )
-
-        st.write(my_info['github'])
     
     with left:
         st.image(img_photo, width=200)
+
+st.write('---')
+st.header('Connect with me...')
+
+c1, c2, c3, c4 = st.columns(4)
+with st.container():
+    c1.write(my_info['github'])
+    c2.write(my_info['fiverr'])
+    c3.write(my_info['upwork'])
+    c4.write(my_info['linkedin'])
 
 with st.container():
     st.write('---')
