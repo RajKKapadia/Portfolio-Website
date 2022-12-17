@@ -17,7 +17,7 @@ with open('assets/raj_kapadia.pdf', 'rb') as file:
 
 lottie_animation = 'https://assets10.lottiefiles.com/packages/lf20_O2ci8jA9QF.json'
 lottie_getintouch = 'https://assets5.lottiefiles.com/private_files/lf30_T12D5w.json'
-img_heroku = Image.open('images/heroku.webp')
+img_quiz_bot = Image.open('images/quiz_bot.webp')
 img_translate = Image.open('images/translate.webp')
 img_photo = Image.open('images/my_photo-modified.png')
 
@@ -82,23 +82,22 @@ with st.container():
     image, text = st.columns((1, 3), gap='small')
 
     with image:
-        st.image(img_heroku)
+        st.image(img_quiz_bot)
 
     with text:
         st.subheader('How to deploy Python Application on Heroku')
         st.write(
             '''
-            Hello friends,
-            In this video, I will show you how you can deploy a Python Flask application on Heroku for free and even use it for free up to its limit.
-            You will need the following things:
-            * active Heroku account [here](https://www.heroku.com/)
-            * Github account
-            * Python installed on your system
-            * optional CONDA virtual environment
-            The code used in this video can be found at my [GitHub repository](https://github.com/RajKKapadia/Heroku-Python-Youtube-Demo)
+            Hello everyone, welcome to this tutorial series on Google Dialogflow, you will learn the following things from this tutorial series:
+            * build a maths quiz chat-bot
+            * develop the back-end functionality in NodeJS
+            * connect the maths quiz chat-bot to Telegram
+            * test everything
+            * deploy the back-end on Render
+            The code used in this video can be found at my [GitHub repository](https://github.com/RajKKapadia/YouTube-Quiz-Chatbot-Dialogflow)
             '''
         )
-        st.markdown('[Watch the video >](https://youtu.be/x8hVoalU0MA)')
+        st.markdown('[Watch the video >](https://youtu.be/dMUbKaI003E)')
 
 with st.container():
     st.write('---')
